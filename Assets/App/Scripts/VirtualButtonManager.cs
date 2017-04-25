@@ -5,7 +5,7 @@ using Vuforia;
 public class VirtualButtonManager : MonoBehaviour, IVirtualButtonEventHandler{
     public GameObject model;
     public GameObject video;
-
+    private VideoPlayerHelper mvideoPlayerHelper;
    
 	// Use this for initialization
 	void Start () {
@@ -37,6 +37,7 @@ public class VirtualButtonManager : MonoBehaviour, IVirtualButtonEventHandler{
             case "btnModel":
                 Debug.Log("Boton modelo pressed");
                 video.gameObject.SetActive(false);
+               
                 model.gameObject.SetActive(true);
                 break;
 
