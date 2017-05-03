@@ -34,7 +34,7 @@ public class TrackableEventHandler : MonoBehaviour, ITrackableEventHandler
         // Pause the video if tracking is lost for more than two seconds
         if (mHasBeenFound && mLostTracking)
         {
-            if (mSecondsSinceLost > 2.0f)
+            if (mSecondsSinceLost > 0.5f)
             {
                 VideoPlaybackBehaviour video = GetComponentInChildren<VideoPlaybackBehaviour>();
                 if (video != null &&

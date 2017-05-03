@@ -14,6 +14,7 @@ public class VirtualButtonManager : MonoBehaviour, IVirtualButtonEventHandler{
         {
             vbs[i].RegisterEventHandler(this);
         }
+         
 	
 	}
 
@@ -30,15 +31,19 @@ public class VirtualButtonManager : MonoBehaviour, IVirtualButtonEventHandler{
     public void OnButtonPressed(VirtualButtonAbstractBehaviour vb){
 
         Debug.Log("OnButtonPressed:" + vb.VirtualButtonName);
+        VideoPlaybackBehaviour videopb = GetComponentInChildren<VideoPlaybackBehaviour>();
 
        
         switch (vb.VirtualButtonName)
         {
             case "btnModel":
                 Debug.Log("Boton modelo pressed");
-                video.gameObject.SetActive(false);
-               
                 model.gameObject.SetActive(true);
+                video.gameObject.SetActive(false);
+                if (videopb != null && videopb.CurrentState == VideoPlayerHelper.MediaState.PLAYING)
+                {
+                    videopb.VideoPlayer.Pause();
+                }
                 break;
 
             case "btnVideo":
@@ -49,6 +54,12 @@ public class VirtualButtonManager : MonoBehaviour, IVirtualButtonEventHandler{
 
             case "btnVR":
                 Debug.Log("Boton vr pressed");
+                video.gameObject.SetActive(false);
+                if (videopb != null && videopb.CurrentState == VideoPlayerHelper.MediaState.PLAYING)
+                {
+                    videopb.VideoPlayer.Pause();
+                }
+                model.gameObject.SetActive(false);
                 break;
         }
 
