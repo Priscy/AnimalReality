@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\App\Scripts\LoadScene.cs" />
+     <Compile Include="Assets\App\Scripts\VRButtonState.cs" />
      <Compile Include="Assets\App\Scripts\VirtualButtonManager.cs" />
      <Compile Include="Assets\Common\CameraSettings.cs" />
      <Compile Include="Assets\Common\FrameRateSettings.cs" />
@@ -194,10 +195,17 @@
      <Compile Include="Assets\NGUI\Scripts\UI\UITexture.cs" />
      <Compile Include="Assets\NGUI\Scripts\UI\UITooltip.cs" />
      <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
+     <Compile Include="Assets\Scripts\BlackMaskBehaviour.cs" />
+     <Compile Include="Assets\Scripts\Button3D.cs" />
+     <Compile Include="Assets\Scripts\GazeRay.cs" />
+     <Compile Include="Assets\Scripts\ModeConfig.cs" />
      <Compile Include="Assets\Scripts\PlayVideo.cs" />
+     <Compile Include="Assets\Scripts\Reticle.cs" />
      <Compile Include="Assets\Scripts\TrackableEventHandler.cs" />
+     <Compile Include="Assets\Scripts\TransitionManager.cs" />
      <Compile Include="Assets\Scripts\VideoPlaybackMenuOptions.cs" />
      <Compile Include="Assets\Scripts\VideoPlaybackTapHandler.cs" />
+     <Compile Include="Assets\Scripts\ViewTrigger.cs" />
      <Compile Include="Assets\Vuforia Video Playback\Scripts\VideoPlaybackBehaviour.cs" />
      <Compile Include="Assets\Vuforia Video Playback\Scripts\VideoPlayerHelper.cs" />
      <Compile Include="Assets\Vuforia\Scripts\BackgroundPlaneBehaviour.cs" />
@@ -261,6 +269,7 @@
      <None Include="Assets\readme_SDK.txt" />
      <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Header.txt" />
      <None Include="Assets\Plugins\Android\VuforiaMediaSource\AndroidManifest.xml" />
+     <None Include="Assets\laxer tree pkg\README.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Masked 3.shader" />
      <None Include="Assets\Plugins\Android\VuforiaMediaSource\build.xml" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 1.shader" />
