@@ -74,6 +74,7 @@ public class TransitionManager : MonoBehaviour
         
         if ((mCurrentMode != mixedRealityMode) || (InAR != isVideoCurrentlyEnabled))
         {
+           
             // mixed reality mode to switch to
             mCurrentMode = mixedRealityMode;
 
@@ -86,8 +87,10 @@ public class TransitionManager : MonoBehaviour
             if (mCurrentMode == MixedRealityController.Mode.HANDHELD_VR
                 || VRButtonState.arButtonState == false)
             {
+                Debug.Log("Entrando a primer if");
                 Debug.Log("Switching to VR: deactivating datasets");
-                //ActivateDatasets(false);
+
+                ActivateDatasets(false);
             }
 
             // As we are moving back to AR, we re-activate the Datasets,
@@ -98,7 +101,7 @@ public class TransitionManager : MonoBehaviour
             if (mCurrentMode == MixedRealityController.Mode.HANDHELD_AR)
             {
                 Debug.Log("Switching to AR: activating datasets");
-               // ActivateDatasets(true);
+                ActivateDatasets(true);
             }
 
             MixedRealityController.Instance.SetMode(mCurrentMode);
