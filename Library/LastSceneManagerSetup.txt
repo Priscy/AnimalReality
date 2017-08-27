@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/App/Scenes/03.Main.unity
+- path: Assets/App/Scenes/02.AyudaVisual.unity
   isLoaded: 1
   isActive: 1
