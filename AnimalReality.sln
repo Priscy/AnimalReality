@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{23BA8EC4-5F65-F9DD-5440-2255229125DA}") = "AnimalReality", "Assembly-CSharp.csproj", "{D6B7B042-4441-6BE8-958B-47C803BD5481}"
+EndProject
+Project("{23BA8EC4-5F65-F9DD-5440-2255229125DA}") = "AnimalReality", "Assembly-CSharp-Editor.csproj", "{BA55C877-2BCE-E549-F450-F0A41ED8A2F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D6B7B042-4441-6BE8-958B-47C803BD5481}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6B7B042-4441-6BE8-958B-47C803BD5481}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6B7B042-4441-6BE8-958B-47C803BD5481}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6B7B042-4441-6BE8-958B-47C803BD5481}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA55C877-2BCE-E549-F450-F0A41ED8A2F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA55C877-2BCE-E549-F450-F0A41ED8A2F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA55C877-2BCE-E549-F450-F0A41ED8A2F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA55C877-2BCE-E549-F450-F0A41ED8A2F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal

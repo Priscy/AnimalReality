@@ -15,6 +15,6 @@ public class LoadScene : MonoBehaviour {
 	}
 
     void OnClick() {
-        SceneManager.LoadScene("02.Main", LoadSceneMode.Additive);
+        //SceneManager.LoadScene("02.Main", LoadSceneMode.Additive);
     }
 }
